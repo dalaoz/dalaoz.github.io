@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Boolean 对象 | 前端图文教程</title>
+    <meta name="generator" content="VuePress 1.9.4">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/js/manifest.json">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="从零开始学前端，超详细的前端入门到进阶学习笔记。">
+    <meta rel="keywords" content="向日葵的花圃,wanan,向日葵">
+    <meta name="Author" content="阿亮">
+    
+    <link rel="preload" href="/assets/css/0.styles.ba12db86.css" as="style"><link rel="preload" href="/assets/js/app.dfbab1e4.js" as="script"><link rel="preload" href="/assets/js/2.674f3196.js" as="script"><link rel="preload" href="/assets/js/75.d5e42546.js" as="script"><link rel="preload" href="/assets/js/3.ae598ba4.js" as="script"><link rel="prefetch" href="/assets/js/10.16616378.js"><link rel="prefetch" href="/assets/js/11.29881809.js"><link rel="prefetch" href="/assets/js/12.9a87c2ae.js"><link rel="prefetch" href="/assets/js/13.57542dd5.js"><link rel="prefetch" href="/assets/js/14.1cc2abc4.js"><link rel="prefetch" href="/assets/js/15.879d6ad5.js"><link rel="prefetch" href="/assets/js/16.1b79ce4a.js"><link rel="prefetch" href="/assets/js/17.15fac69c.js"><link rel="prefetch" href="/assets/js/18.fa884e6e.js"><link rel="prefetch" href="/assets/js/19.34e4a395.js"><link rel="prefetch" href="/assets/js/20.1979e1c1.js"><link rel="prefetch" href="/assets/js/21.e840c4f5.js"><link rel="prefetch" href="/assets/js/22.d9d72673.js"><link rel="prefetch" href="/assets/js/23.d77d6229.js"><link rel="prefetch" href="/assets/js/24.683422a1.js"><link rel="prefetch" href="/assets/js/25.0fa5c50c.js"><link rel="prefetch" href="/assets/js/26.b04bac84.js"><link rel="prefetch" href="/assets/js/27.dda0e719.js"><link rel="prefetch" href="/assets/js/28.c4edefb6.js"><link rel="prefetch" href="/assets/js/29.196c3857.js"><link rel="prefetch" href="/assets/js/30.a19d3c53.js"><link rel="prefetch" href="/assets/js/31.1fdfca4f.js"><link rel="prefetch" href="/assets/js/32.725f955d.js"><link rel="prefetch" href="/assets/js/33.8cee3bd1.js"><link rel="prefetch" href="/assets/js/34.98be3dd6.js"><link rel="prefetch" href="/assets/js/35.5f03dd4a.js"><link rel="prefetch" href="/assets/js/36.290a79ae.js"><link rel="prefetch" href="/assets/js/37.a2951d1d.js"><link rel="prefetch" href="/assets/js/38.7db7d2ce.js"><link rel="prefetch" href="/assets/js/39.4d529e07.js"><link rel="prefetch" href="/assets/js/4.69317af8.js"><link rel="prefetch" href="/assets/js/40.98318dea.js"><link rel="prefetch" href="/assets/js/41.bafd8e9e.js"><link rel="prefetch" href="/assets/js/42.5aa666c5.js"><link rel="prefetch" href="/assets/js/43.03715cae.js"><link rel="prefetch" href="/assets/js/44.98044057.js"><link rel="prefetch" href="/assets/js/45.e056bc66.js"><link rel="prefetch" href="/assets/js/46.3e355785.js"><link rel="prefetch" href="/assets/js/47.1710c122.js"><link rel="prefetch" href="/assets/js/48.ea751d13.js"><link rel="prefetch" href="/assets/js/49.2971669d.js"><link rel="prefetch" href="/assets/js/5.d97bbedf.js"><link rel="prefetch" href="/assets/js/50.427e1a31.js"><link rel="prefetch" href="/assets/js/51.b3c33558.js"><link rel="prefetch" href="/assets/js/52.b2c8e710.js"><link rel="prefetch" href="/assets/js/53.bdd88686.js"><link rel="prefetch" href="/assets/js/54.bcc383bb.js"><link rel="prefetch" href="/assets/js/55.be13c03d.js"><link rel="prefetch" href="/assets/js/56.ec0440a9.js"><link rel="prefetch" href="/assets/js/57.38e5ce7d.js"><link rel="prefetch" href="/assets/js/58.11645d67.js"><link rel="prefetch" href="/assets/js/59.1e96e19c.js"><link rel="prefetch" href="/assets/js/6.3b5fd920.js"><link rel="prefetch" href="/assets/js/60.48884068.js"><link rel="prefetch" href="/assets/js/61.67e6dcf4.js"><link rel="prefetch" href="/assets/js/62.644505b8.js"><link rel="prefetch" href="/assets/js/63.381e1897.js"><link rel="prefetch" href="/assets/js/64.a30384e1.js"><link rel="prefetch" href="/assets/js/65.ff861eb4.js"><link rel="prefetch" href="/assets/js/66.45a06096.js"><link rel="prefetch" href="/assets/js/67.8743b6dc.js"><link rel="prefetch" href="/assets/js/68.4d065624.js"><link rel="prefetch" href="/assets/js/69.38f8f966.js"><link rel="prefetch" href="/assets/js/7.82c024fb.js"><link rel="prefetch" href="/assets/js/70.2724ba9a.js"><link rel="prefetch" href="/assets/js/71.4d73462a.js"><link rel="prefetch" href="/assets/js/72.d94a0a71.js"><link rel="prefetch" href="/assets/js/73.d24e6a16.js"><link rel="prefetch" href="/assets/js/74.40cd0e27.js"><link rel="prefetch" href="/assets/js/76.cd30be22.js"><link rel="prefetch" href="/assets/js/77.b287e80f.js"><link rel="prefetch" href="/assets/js/78.8fb9f058.js"><link rel="prefetch" href="/assets/js/79.41accf9e.js"><link rel="prefetch" href="/assets/js/8.5860fb56.js"><link rel="prefetch" href="/assets/js/80.9c4900b2.js"><link rel="prefetch" href="/assets/js/81.f7c0ee1e.js"><link rel="prefetch" href="/assets/js/82.6439cccd.js"><link rel="prefetch" href="/assets/js/83.14a8a434.js"><link rel="prefetch" href="/assets/js/84.bbedb52a.js"><link rel="prefetch" href="/assets/js/85.051db183.js"><link rel="prefetch" href="/assets/js/86.a4230665.js"><link rel="prefetch" href="/assets/js/87.e43eac63.js"><link rel="prefetch" href="/assets/js/88.d535360d.js"><link rel="prefetch" href="/assets/js/89.531d6866.js"><link rel="prefetch" href="/assets/js/9.d888eebd.js"><link rel="prefetch" href="/assets/js/90.cdab578d.js"><link rel="prefetch" href="/assets/js/91.c95dd417.js"><link rel="prefetch" href="/assets/js/92.b3ac4aec.js"><link rel="prefetch" href="/assets/js/93.415d411a.js"><link rel="prefetch" href="/assets/js/94.85f641ab.js"><link rel="prefetch" href="/assets/js/95.90d685b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ba12db86.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端图文教程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" class="nav-link router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" class="nav-link router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wangdao/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1. 入门篇</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2. 数据类型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>3. 运算符</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. 语法专题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>5. 标准库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wangdao/stdlib/object.html" class="sidebar-link">5.1 Object 对象</a></li><li><a href="/wangdao/stdlib/attributes.html" class="sidebar-link">5.2 属性描述对象</a></li><li><a href="/wangdao/stdlib/array.html" class="sidebar-link">5.3 Array 对象</a></li><li><a href="/wangdao/stdlib/wrapper.html" class="sidebar-link">5.4 包装对象</a></li><li><a href="/wangdao/stdlib/boolean.html" aria-current="page" class="active sidebar-link">5.5 Boolean 对象</a></li><li><a href="/wangdao/stdlib/number.html" class="sidebar-link">5.6 Number 对象</a></li><li><a href="/wangdao/stdlib/string.html" class="sidebar-link">5.7 String 对象</a></li><li><a href="/wangdao/stdlib/math.html" class="sidebar-link">5.8 Math 对象</a></li><li><a href="/wangdao/stdlib/date.html" class="sidebar-link">5.9 Date 对象</a></li><li><a href="/wangdao/stdlib/regexp.html" class="sidebar-link">5.10 RegExp 对象</a></li><li><a href="/wangdao/stdlib/json.html" class="sidebar-link">5.11 JSON 对象</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>6. 面向对象编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>7. 异步操作</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>8. DOM</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>9. 事件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>10. 浏览器模型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>11. 附录：网页元素接口</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="boolean-对象"><a href="#boolean-对象" class="header-anchor">#</a> Boolean 对象</h1> <h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p><code>Boolean</code>对象是 JavaScript 的三个包装对象之一。作为构造函数，它主要用于生成布尔值的包装对象实例。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">typeof</span> b <span class="token comment">// &quot;object&quot;</span>
+b<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+</code></pre></div><p>上面代码的变量<code>b</code>是一个<code>Boolean</code>对象的实例，它的类型是对象，值为布尔值<code>true</code>。</p> <p>注意，<code>false</code>对应的包装对象实例，布尔运算结果也是<code>true</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// true</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// 无输出</span>
+</code></pre></div><p>上面代码的第一个例子之所以得到<code>true</code>，是因为<code>false</code>对应的包装对象实例是一个对象，进行逻辑运算时，被自动转化成布尔值<code>true</code>（因为所有对象对应的布尔值都是<code>true</code>）。而实例的<code>valueOf</code>方法，则返回实例对应的原始值，本例为<code>false</code>。</p> <h2 id="boolean-函数的类型转换作用"><a href="#boolean-函数的类型转换作用" class="header-anchor">#</a> Boolean 函数的类型转换作用</h2> <p><code>Boolean</code>对象除了可以作为构造函数，还可以单独使用，将任意值转为布尔值。这时<code>Boolean</code>就是一个单纯的工具方法。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">'false'</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">foo</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+</code></pre></div><p>上面代码中几种得到<code>true</code>的情况，都值得认真记住。</p> <p>顺便提一下，使用双重的否运算符（<code>!</code>）也可以将任意值转为对应的布尔值。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">!</span><span class="token operator">!</span><span class="token keyword">undefined</span> <span class="token comment">// false</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token keyword">null</span> <span class="token comment">// false</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token number">0</span> <span class="token comment">// false</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token string">''</span> <span class="token comment">// false</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token number">NaN</span> <span class="token comment">// false</span>
+
+<span class="token operator">!</span><span class="token operator">!</span><span class="token number">1</span> <span class="token comment">// true</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token string">'false'</span> <span class="token comment">// true</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">// true</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// true</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// true</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">foo</span><span class="token regex-delimiter">/</span></span> <span class="token comment">// true</span>
+</code></pre></div><p>最后，对于一些特殊值，<code>Boolean</code>对象前面加不加<code>new</code>，会得到完全相反的结果，必须小心。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// 无输出</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// true</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// 无输出</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// true</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wangdao/stdlib/wrapper.html" class="prev">
+        5.4 包装对象
+      </a></span> <span class="next"><a href="/wangdao/stdlib/number.html">
+        5.6 Number 对象
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.dfbab1e4.js" defer></script><script src="/assets/js/2.674f3196.js" defer></script><script src="/assets/js/75.d5e42546.js" defer></script><script src="/assets/js/3.ae598ba4.js" defer></script>
+  </body>
+</html>

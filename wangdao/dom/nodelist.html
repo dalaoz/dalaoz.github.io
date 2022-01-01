@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NodeList 接口，HTMLCollection 接口 | 前端图文教程</title>
+    <meta name="generator" content="VuePress 1.9.4">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/js/manifest.json">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="从零开始学前端，超详细的前端入门到进阶学习笔记。">
+    <meta rel="keywords" content="向日葵的花圃,wanan,向日葵">
+    <meta name="Author" content="阿亮">
+    
+    <link rel="preload" href="/assets/css/0.styles.ba12db86.css" as="style"><link rel="preload" href="/assets/js/app.dfbab1e4.js" as="script"><link rel="preload" href="/assets/js/2.674f3196.js" as="script"><link rel="preload" href="/assets/js/38.7db7d2ce.js" as="script"><link rel="preload" href="/assets/js/3.ae598ba4.js" as="script"><link rel="prefetch" href="/assets/js/10.16616378.js"><link rel="prefetch" href="/assets/js/11.29881809.js"><link rel="prefetch" href="/assets/js/12.9a87c2ae.js"><link rel="prefetch" href="/assets/js/13.57542dd5.js"><link rel="prefetch" href="/assets/js/14.1cc2abc4.js"><link rel="prefetch" href="/assets/js/15.879d6ad5.js"><link rel="prefetch" href="/assets/js/16.1b79ce4a.js"><link rel="prefetch" href="/assets/js/17.15fac69c.js"><link rel="prefetch" href="/assets/js/18.fa884e6e.js"><link rel="prefetch" href="/assets/js/19.34e4a395.js"><link rel="prefetch" href="/assets/js/20.1979e1c1.js"><link rel="prefetch" href="/assets/js/21.e840c4f5.js"><link rel="prefetch" href="/assets/js/22.d9d72673.js"><link rel="prefetch" href="/assets/js/23.d77d6229.js"><link rel="prefetch" href="/assets/js/24.683422a1.js"><link rel="prefetch" href="/assets/js/25.0fa5c50c.js"><link rel="prefetch" href="/assets/js/26.b04bac84.js"><link rel="prefetch" href="/assets/js/27.dda0e719.js"><link rel="prefetch" href="/assets/js/28.c4edefb6.js"><link rel="prefetch" href="/assets/js/29.196c3857.js"><link rel="prefetch" href="/assets/js/30.a19d3c53.js"><link rel="prefetch" href="/assets/js/31.1fdfca4f.js"><link rel="prefetch" href="/assets/js/32.725f955d.js"><link rel="prefetch" href="/assets/js/33.8cee3bd1.js"><link rel="prefetch" href="/assets/js/34.98be3dd6.js"><link rel="prefetch" href="/assets/js/35.5f03dd4a.js"><link rel="prefetch" href="/assets/js/36.290a79ae.js"><link rel="prefetch" href="/assets/js/37.a2951d1d.js"><link rel="prefetch" href="/assets/js/39.4d529e07.js"><link rel="prefetch" href="/assets/js/4.69317af8.js"><link rel="prefetch" href="/assets/js/40.98318dea.js"><link rel="prefetch" href="/assets/js/41.bafd8e9e.js"><link rel="prefetch" href="/assets/js/42.5aa666c5.js"><link rel="prefetch" href="/assets/js/43.03715cae.js"><link rel="prefetch" href="/assets/js/44.98044057.js"><link rel="prefetch" href="/assets/js/45.e056bc66.js"><link rel="prefetch" href="/assets/js/46.3e355785.js"><link rel="prefetch" href="/assets/js/47.1710c122.js"><link rel="prefetch" href="/assets/js/48.ea751d13.js"><link rel="prefetch" href="/assets/js/49.2971669d.js"><link rel="prefetch" href="/assets/js/5.d97bbedf.js"><link rel="prefetch" href="/assets/js/50.427e1a31.js"><link rel="prefetch" href="/assets/js/51.b3c33558.js"><link rel="prefetch" href="/assets/js/52.b2c8e710.js"><link rel="prefetch" href="/assets/js/53.bdd88686.js"><link rel="prefetch" href="/assets/js/54.bcc383bb.js"><link rel="prefetch" href="/assets/js/55.be13c03d.js"><link rel="prefetch" href="/assets/js/56.ec0440a9.js"><link rel="prefetch" href="/assets/js/57.38e5ce7d.js"><link rel="prefetch" href="/assets/js/58.11645d67.js"><link rel="prefetch" href="/assets/js/59.1e96e19c.js"><link rel="prefetch" href="/assets/js/6.3b5fd920.js"><link rel="prefetch" href="/assets/js/60.48884068.js"><link rel="prefetch" href="/assets/js/61.67e6dcf4.js"><link rel="prefetch" href="/assets/js/62.644505b8.js"><link rel="prefetch" href="/assets/js/63.381e1897.js"><link rel="prefetch" href="/assets/js/64.a30384e1.js"><link rel="prefetch" href="/assets/js/65.ff861eb4.js"><link rel="prefetch" href="/assets/js/66.45a06096.js"><link rel="prefetch" href="/assets/js/67.8743b6dc.js"><link rel="prefetch" href="/assets/js/68.4d065624.js"><link rel="prefetch" href="/assets/js/69.38f8f966.js"><link rel="prefetch" href="/assets/js/7.82c024fb.js"><link rel="prefetch" href="/assets/js/70.2724ba9a.js"><link rel="prefetch" href="/assets/js/71.4d73462a.js"><link rel="prefetch" href="/assets/js/72.d94a0a71.js"><link rel="prefetch" href="/assets/js/73.d24e6a16.js"><link rel="prefetch" href="/assets/js/74.40cd0e27.js"><link rel="prefetch" href="/assets/js/75.d5e42546.js"><link rel="prefetch" href="/assets/js/76.cd30be22.js"><link rel="prefetch" href="/assets/js/77.b287e80f.js"><link rel="prefetch" href="/assets/js/78.8fb9f058.js"><link rel="prefetch" href="/assets/js/79.41accf9e.js"><link rel="prefetch" href="/assets/js/8.5860fb56.js"><link rel="prefetch" href="/assets/js/80.9c4900b2.js"><link rel="prefetch" href="/assets/js/81.f7c0ee1e.js"><link rel="prefetch" href="/assets/js/82.6439cccd.js"><link rel="prefetch" href="/assets/js/83.14a8a434.js"><link rel="prefetch" href="/assets/js/84.bbedb52a.js"><link rel="prefetch" href="/assets/js/85.051db183.js"><link rel="prefetch" href="/assets/js/86.a4230665.js"><link rel="prefetch" href="/assets/js/87.e43eac63.js"><link rel="prefetch" href="/assets/js/88.d535360d.js"><link rel="prefetch" href="/assets/js/89.531d6866.js"><link rel="prefetch" href="/assets/js/9.d888eebd.js"><link rel="prefetch" href="/assets/js/90.cdab578d.js"><link rel="prefetch" href="/assets/js/91.c95dd417.js"><link rel="prefetch" href="/assets/js/92.b3ac4aec.js"><link rel="prefetch" href="/assets/js/93.415d411a.js"><link rel="prefetch" href="/assets/js/94.85f641ab.js"><link rel="prefetch" href="/assets/js/95.90d685b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ba12db86.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端图文教程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" class="nav-link router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" class="nav-link router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wangdao/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1. 入门篇</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2. 数据类型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>3. 运算符</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. 语法专题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>5. 标准库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>6. 面向对象编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>7. 异步操作</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>8. DOM</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wangdao/dom/general.html" class="sidebar-link">8.1 概述</a></li><li><a href="/wangdao/dom/node.html" class="sidebar-link">8.2 Node 接口</a></li><li><a href="/wangdao/dom/nodelist.html" aria-current="page" class="active sidebar-link">8.3 NodeList 接口，HTMLCollection 接口</a></li><li><a href="/wangdao/dom/parentnode.html" class="sidebar-link">8.4 ParentNode 接口，ChildNode 接口</a></li><li><a href="/wangdao/dom/document.html" class="sidebar-link">8.5 Document 节点</a></li><li><a href="/wangdao/dom/element.html" class="sidebar-link">8.6 Element 节点</a></li><li><a href="/wangdao/dom/attributes.html" class="sidebar-link">8.7 属性的操作</a></li><li><a href="/wangdao/dom/text.html" class="sidebar-link">8.8 Text 节点和 DocumentFragment 节点</a></li><li><a href="/wangdao/dom/css.html" class="sidebar-link">8.9 CSS 操作</a></li><li><a href="/wangdao/dom/mutationobserver.html" class="sidebar-link">8.10 Mutation Observer API</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>9. 事件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>10. 浏览器模型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>11. 附录：网页元素接口</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nodelist-接口-htmlcollection-接口"><a href="#nodelist-接口-htmlcollection-接口" class="header-anchor">#</a> NodeList 接口，HTMLCollection 接口</h1> <p>节点都是单个对象，有时需要一种数据结构，能够容纳多个节点。DOM 提供两种节点集合，用于容纳多个节点：<code>NodeList</code>和<code>HTMLCollection</code>。</p> <p>这两种集合都属于接口规范。许多 DOM 属性和方法，返回的结果是<code>NodeList</code>实例或<code>HTMLCollection</code>实例。主要区别是，<code>NodeList</code>可以包含各种类型的节点，<code>HTMLCollection</code>只能包含 HTML 元素节点。</p> <h2 id="nodelist-接口"><a href="#nodelist-接口" class="header-anchor">#</a> NodeList 接口</h2> <h3 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h3> <p><code>NodeList</code>实例是一个类似数组的对象，它的成员是节点对象。通过以下方法可以得到<code>NodeList</code>实例。</p> <ul><li><code>Node.childNodes</code></li> <li><code>document.querySelectorAll()</code>等节点搜索方法</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes <span class="token keyword">instanceof</span> <span class="token class-name">NodeList</span> <span class="token comment">// true</span>
+</code></pre></div><p><code>NodeList</code>实例很像数组，可以使用<code>length</code>属性和<code>forEach</code>方法。但是，它不是数组，不能使用<code>pop</code>或<code>push</code>之类数组特有的方法。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> children <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+
+Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>children<span class="token punctuation">)</span> <span class="token comment">// false</span>
+
+children<span class="token punctuation">.</span>length <span class="token comment">// 34</span>
+children<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span>
+</code></pre></div><p>上面代码中，NodeList 实例<code>children</code>不是数组，但是具有<code>length</code>属性和<code>forEach</code>方法。</p> <p>如果<code>NodeList</code>实例要使用数组方法，可以将其转为真正的数组。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> children <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+<span class="token keyword">var</span> nodeArr <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>children<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>除了使用<code>forEach</code>方法遍历 NodeList 实例，还可以使用<code>for</code>循环。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> children <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> children<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> item <span class="token operator">=</span> children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>注意，NodeList 实例可能是动态集合，也可能是静态集合。所谓动态集合就是一个活的集合，DOM 删除或新增一个相关节点，都会立刻反映在 NodeList 实例。目前，只有<code>Node.childNodes</code>返回的是一个动态集合，其他的 NodeList 都是静态集合。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> children <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+children<span class="token punctuation">.</span>length <span class="token comment">// 18</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+children<span class="token punctuation">.</span>length <span class="token comment">// 19</span>
+</code></pre></div><p>上面代码中，文档增加一个子节点，NodeList 实例<code>children</code>的<code>length</code>属性就增加了1。</p> <h3 id="nodelist-prototype-length"><a href="#nodelist-prototype-length" class="header-anchor">#</a> NodeList.prototype.length</h3> <p><code>length</code>属性返回 NodeList 实例包含的节点数量。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length
+<span class="token comment">// 0</span>
+</code></pre></div><p>上面代码中，<code>document.querySelectorAll</code>返回一个 NodeList 集合。对于那些不存在的 HTML 标签，<code>length</code>属性返回<code>0</code>。</p> <h3 id="nodelist-prototype-foreach"><a href="#nodelist-prototype-foreach" class="header-anchor">#</a> NodeList.prototype.forEach()</h3> <p><code>forEach</code>方法用于遍历 NodeList 的所有成员。它接受一个回调函数作为参数，每一轮遍历就执行一次这个回调函数，用法与数组实例的<code>forEach</code>方法完全一致。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> children <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+children<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> i<span class="token punctuation">,</span> list</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>上面代码中，回调函数<code>f</code>的三个参数依次是当前成员、位置和当前 NodeList 实例。<code>forEach</code>方法的第二个参数，用于绑定回调函数内部的<code>this</code>，该参数可省略。</p> <h3 id="nodelist-prototype-item"><a href="#nodelist-prototype-item" class="header-anchor">#</a> NodeList.prototype.item()</h3> <p><code>item</code>方法接受一个整数值作为参数，表示成员的位置，返回该位置上的成员。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">.</span><span class="token function">item</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre></div><p>上面代码中，<code>item(0)</code>返回第一个成员。</p> <p>如果参数值大于实际长度，或者索引不合法（比如负数），<code>item</code>方法返回<code>null</code>。如果省略参数，<code>item</code>方法会报错。</p> <p>所有类似数组的对象，都可以使用方括号运算符取出成员。一般情况下，都是使用方括号运算符，而不使用<code>item</code>方法。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="nodelist-prototype-keys-nodelist-prototype-values-nodelist-prototype-entries"><a href="#nodelist-prototype-keys-nodelist-prototype-values-nodelist-prototype-entries" class="header-anchor">#</a> NodeList.prototype.keys()，NodeList.prototype.values()，NodeList.prototype.entries()</h3> <p>这三个方法都返回一个 ES6 的遍历器对象，可以通过<code>for...of</code>循环遍历获取每一个成员的信息。区别在于，<code>keys()</code>返回键名的遍历器，<code>values()</code>返回键值的遍历器，<code>entries()</code>返回的遍历器同时包含键名和键值的信息。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> children <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">of</span> children<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 0</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// ...</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> value <span class="token keyword">of</span> children<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// #text</span>
+<span class="token comment">// &lt;script&gt;</span>
+<span class="token comment">// ...</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> entry <span class="token keyword">of</span> children<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entry<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Array [ 0, #text ]</span>
+<span class="token comment">// Array [ 1, &lt;script&gt; ]</span>
+<span class="token comment">// ...</span>
+</code></pre></div><h2 id="htmlcollection-接口"><a href="#htmlcollection-接口" class="header-anchor">#</a> HTMLCollection 接口</h2> <h3 id="概述-2"><a href="#概述-2" class="header-anchor">#</a> 概述</h3> <p><code>HTMLCollection</code>是一个节点对象的集合，只能包含元素节点（element），不能包含其他类型的节点。它的返回值是一个类似数组的对象，但是与<code>NodeList</code>接口不同，<code>HTMLCollection</code>没有<code>forEach</code>方法，只能使用<code>for</code>循环遍历。</p> <p>返回<code>HTMLCollection</code>实例的，主要是一些<code>Document</code>对象的集合属性，比如<code>document.links</code>、<code>document.forms</code>、<code>document.images</code>等。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>links <span class="token keyword">instanceof</span> <span class="token class-name">HTMLCollection</span> <span class="token comment">// true</span>
+</code></pre></div><p><code>HTMLCollection</code>实例都是动态集合，节点的变化会实时反映在集合中。</p> <p>如果元素节点有<code>id</code>或<code>name</code>属性，那么<code>HTMLCollection</code>实例上面，可以使用<code>id</code>属性或<code>name</code>属性引用该节点元素。如果没有对应的节点，则返回<code>null</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// HTML 代码如下</span>
+<span class="token comment">// &lt;img id=&quot;pic&quot; src=&quot;http://example.com/foo.jpg&quot;&gt;</span>
+
+<span class="token keyword">var</span> pic <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'pic'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>images<span class="token punctuation">.</span>pic <span class="token operator">===</span> pic <span class="token comment">// true</span>
+</code></pre></div><p>上面代码中，<code>document.images</code>是一个<code>HTMLCollection</code>实例，可以通过<code>&lt;img&gt;</code>元素的<code>id</code>属性值，从<code>HTMLCollection</code>实例上取到这个元素。</p> <h3 id="htmlcollection-prototype-length"><a href="#htmlcollection-prototype-length" class="header-anchor">#</a> HTMLCollection.prototype.length</h3> <p><code>length</code>属性返回<code>HTMLCollection</code>实例包含的成员数量。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>links<span class="token punctuation">.</span>length <span class="token comment">// 18</span>
+</code></pre></div><h3 id="htmlcollection-prototype-item"><a href="#htmlcollection-prototype-item" class="header-anchor">#</a> HTMLCollection.prototype.item()</h3> <p><code>item</code>方法接受一个整数值作为参数，表示成员的位置，返回该位置上的成员。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> c <span class="token operator">=</span> document<span class="token punctuation">.</span>images<span class="token punctuation">;</span>
+<span class="token keyword">var</span> img0 <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">item</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>上面代码中，<code>item(0)</code>表示返回0号位置的成员。由于方括号运算符也具有同样作用，而且使用更方便，所以一般情况下，总是使用方括号运算符。</p> <p>如果参数值超出成员数量或者不合法（比如小于0），那么<code>item</code>方法返回<code>null</code>。</p> <h3 id="htmlcollection-prototype-nameditem"><a href="#htmlcollection-prototype-nameditem" class="header-anchor">#</a> HTMLCollection.prototype.namedItem()</h3> <p><code>namedItem</code>方法的参数是一个字符串，表示<code>id</code>属性或<code>name</code>属性的值，返回当前集合中对应的元素节点。如果没有对应的节点，则返回<code>null</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// HTML 代码如下</span>
+<span class="token comment">// &lt;img id=&quot;pic&quot; src=&quot;http://example.com/foo.jpg&quot;&gt;</span>
+
+<span class="token keyword">var</span> pic <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'pic'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>images<span class="token punctuation">.</span><span class="token function">namedItem</span><span class="token punctuation">(</span><span class="token string">'pic'</span><span class="token punctuation">)</span> <span class="token operator">===</span> pic <span class="token comment">// true</span>
+</code></pre></div><p><code>Collection.namedItem('value')</code>等同于<code>Collection['value']</code>。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wangdao/dom/node.html" class="prev">
+        8.2 Node 接口
+      </a></span> <span class="next"><a href="/wangdao/dom/parentnode.html">
+        8.4 ParentNode 接口，ChildNode 接口
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.dfbab1e4.js" defer></script><script src="/assets/js/2.674f3196.js" defer></script><script src="/assets/js/38.7db7d2ce.js" defer></script><script src="/assets/js/3.ae598ba4.js" defer></script>
+  </body>
+</html>

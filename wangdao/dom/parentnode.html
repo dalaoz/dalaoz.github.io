@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ParentNode 接口，ChildNode 接口 | 前端图文教程</title>
+    <meta name="generator" content="VuePress 1.9.4">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/js/manifest.json">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="从零开始学前端，超详细的前端入门到进阶学习笔记。">
+    <meta rel="keywords" content="向日葵的花圃,wanan,向日葵">
+    <meta name="Author" content="阿亮">
+    
+    <link rel="preload" href="/assets/css/0.styles.ba12db86.css" as="style"><link rel="preload" href="/assets/js/app.dfbab1e4.js" as="script"><link rel="preload" href="/assets/js/2.674f3196.js" as="script"><link rel="preload" href="/assets/js/39.4d529e07.js" as="script"><link rel="preload" href="/assets/js/3.ae598ba4.js" as="script"><link rel="prefetch" href="/assets/js/10.16616378.js"><link rel="prefetch" href="/assets/js/11.29881809.js"><link rel="prefetch" href="/assets/js/12.9a87c2ae.js"><link rel="prefetch" href="/assets/js/13.57542dd5.js"><link rel="prefetch" href="/assets/js/14.1cc2abc4.js"><link rel="prefetch" href="/assets/js/15.879d6ad5.js"><link rel="prefetch" href="/assets/js/16.1b79ce4a.js"><link rel="prefetch" href="/assets/js/17.15fac69c.js"><link rel="prefetch" href="/assets/js/18.fa884e6e.js"><link rel="prefetch" href="/assets/js/19.34e4a395.js"><link rel="prefetch" href="/assets/js/20.1979e1c1.js"><link rel="prefetch" href="/assets/js/21.e840c4f5.js"><link rel="prefetch" href="/assets/js/22.d9d72673.js"><link rel="prefetch" href="/assets/js/23.d77d6229.js"><link rel="prefetch" href="/assets/js/24.683422a1.js"><link rel="prefetch" href="/assets/js/25.0fa5c50c.js"><link rel="prefetch" href="/assets/js/26.b04bac84.js"><link rel="prefetch" href="/assets/js/27.dda0e719.js"><link rel="prefetch" href="/assets/js/28.c4edefb6.js"><link rel="prefetch" href="/assets/js/29.196c3857.js"><link rel="prefetch" href="/assets/js/30.a19d3c53.js"><link rel="prefetch" href="/assets/js/31.1fdfca4f.js"><link rel="prefetch" href="/assets/js/32.725f955d.js"><link rel="prefetch" href="/assets/js/33.8cee3bd1.js"><link rel="prefetch" href="/assets/js/34.98be3dd6.js"><link rel="prefetch" href="/assets/js/35.5f03dd4a.js"><link rel="prefetch" href="/assets/js/36.290a79ae.js"><link rel="prefetch" href="/assets/js/37.a2951d1d.js"><link rel="prefetch" href="/assets/js/38.7db7d2ce.js"><link rel="prefetch" href="/assets/js/4.69317af8.js"><link rel="prefetch" href="/assets/js/40.98318dea.js"><link rel="prefetch" href="/assets/js/41.bafd8e9e.js"><link rel="prefetch" href="/assets/js/42.5aa666c5.js"><link rel="prefetch" href="/assets/js/43.03715cae.js"><link rel="prefetch" href="/assets/js/44.98044057.js"><link rel="prefetch" href="/assets/js/45.e056bc66.js"><link rel="prefetch" href="/assets/js/46.3e355785.js"><link rel="prefetch" href="/assets/js/47.1710c122.js"><link rel="prefetch" href="/assets/js/48.ea751d13.js"><link rel="prefetch" href="/assets/js/49.2971669d.js"><link rel="prefetch" href="/assets/js/5.d97bbedf.js"><link rel="prefetch" href="/assets/js/50.427e1a31.js"><link rel="prefetch" href="/assets/js/51.b3c33558.js"><link rel="prefetch" href="/assets/js/52.b2c8e710.js"><link rel="prefetch" href="/assets/js/53.bdd88686.js"><link rel="prefetch" href="/assets/js/54.bcc383bb.js"><link rel="prefetch" href="/assets/js/55.be13c03d.js"><link rel="prefetch" href="/assets/js/56.ec0440a9.js"><link rel="prefetch" href="/assets/js/57.38e5ce7d.js"><link rel="prefetch" href="/assets/js/58.11645d67.js"><link rel="prefetch" href="/assets/js/59.1e96e19c.js"><link rel="prefetch" href="/assets/js/6.3b5fd920.js"><link rel="prefetch" href="/assets/js/60.48884068.js"><link rel="prefetch" href="/assets/js/61.67e6dcf4.js"><link rel="prefetch" href="/assets/js/62.644505b8.js"><link rel="prefetch" href="/assets/js/63.381e1897.js"><link rel="prefetch" href="/assets/js/64.a30384e1.js"><link rel="prefetch" href="/assets/js/65.ff861eb4.js"><link rel="prefetch" href="/assets/js/66.45a06096.js"><link rel="prefetch" href="/assets/js/67.8743b6dc.js"><link rel="prefetch" href="/assets/js/68.4d065624.js"><link rel="prefetch" href="/assets/js/69.38f8f966.js"><link rel="prefetch" href="/assets/js/7.82c024fb.js"><link rel="prefetch" href="/assets/js/70.2724ba9a.js"><link rel="prefetch" href="/assets/js/71.4d73462a.js"><link rel="prefetch" href="/assets/js/72.d94a0a71.js"><link rel="prefetch" href="/assets/js/73.d24e6a16.js"><link rel="prefetch" href="/assets/js/74.40cd0e27.js"><link rel="prefetch" href="/assets/js/75.d5e42546.js"><link rel="prefetch" href="/assets/js/76.cd30be22.js"><link rel="prefetch" href="/assets/js/77.b287e80f.js"><link rel="prefetch" href="/assets/js/78.8fb9f058.js"><link rel="prefetch" href="/assets/js/79.41accf9e.js"><link rel="prefetch" href="/assets/js/8.5860fb56.js"><link rel="prefetch" href="/assets/js/80.9c4900b2.js"><link rel="prefetch" href="/assets/js/81.f7c0ee1e.js"><link rel="prefetch" href="/assets/js/82.6439cccd.js"><link rel="prefetch" href="/assets/js/83.14a8a434.js"><link rel="prefetch" href="/assets/js/84.bbedb52a.js"><link rel="prefetch" href="/assets/js/85.051db183.js"><link rel="prefetch" href="/assets/js/86.a4230665.js"><link rel="prefetch" href="/assets/js/87.e43eac63.js"><link rel="prefetch" href="/assets/js/88.d535360d.js"><link rel="prefetch" href="/assets/js/89.531d6866.js"><link rel="prefetch" href="/assets/js/9.d888eebd.js"><link rel="prefetch" href="/assets/js/90.cdab578d.js"><link rel="prefetch" href="/assets/js/91.c95dd417.js"><link rel="prefetch" href="/assets/js/92.b3ac4aec.js"><link rel="prefetch" href="/assets/js/93.415d411a.js"><link rel="prefetch" href="/assets/js/94.85f641ab.js"><link rel="prefetch" href="/assets/js/95.90d685b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ba12db86.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端图文教程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" class="nav-link router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" class="nav-link router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wangdao/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1. 入门篇</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2. 数据类型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>3. 运算符</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. 语法专题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>5. 标准库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>6. 面向对象编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>7. 异步操作</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>8. DOM</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wangdao/dom/general.html" class="sidebar-link">8.1 概述</a></li><li><a href="/wangdao/dom/node.html" class="sidebar-link">8.2 Node 接口</a></li><li><a href="/wangdao/dom/nodelist.html" class="sidebar-link">8.3 NodeList 接口，HTMLCollection 接口</a></li><li><a href="/wangdao/dom/parentnode.html" aria-current="page" class="active sidebar-link">8.4 ParentNode 接口，ChildNode 接口</a></li><li><a href="/wangdao/dom/document.html" class="sidebar-link">8.5 Document 节点</a></li><li><a href="/wangdao/dom/element.html" class="sidebar-link">8.6 Element 节点</a></li><li><a href="/wangdao/dom/attributes.html" class="sidebar-link">8.7 属性的操作</a></li><li><a href="/wangdao/dom/text.html" class="sidebar-link">8.8 Text 节点和 DocumentFragment 节点</a></li><li><a href="/wangdao/dom/css.html" class="sidebar-link">8.9 CSS 操作</a></li><li><a href="/wangdao/dom/mutationobserver.html" class="sidebar-link">8.10 Mutation Observer API</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>9. 事件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>10. 浏览器模型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>11. 附录：网页元素接口</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="parentnode-接口-childnode-接口"><a href="#parentnode-接口-childnode-接口" class="header-anchor">#</a> ParentNode 接口，ChildNode 接口</h1> <p>节点对象除了继承 Node 接口以外，还拥有其他接口。<code>ParentNode</code>接口表示当前节点是一个父节点，提供一些处理子节点的方法。<code>ChildNode</code>接口表示当前节点是一个子节点，提供一些相关方法。</p> <h2 id="parentnode-接口"><a href="#parentnode-接口" class="header-anchor">#</a> ParentNode 接口</h2> <p>如果当前节点是父节点，就会混入了（mixin）<code>ParentNode</code>接口。由于只有元素节点（element）、文档节点（document）和文档片段节点（documentFragment）拥有子节点，因此只有这三类节点会拥有<code>ParentNode</code>接口。</p> <h3 id="parentnode-children"><a href="#parentnode-children" class="header-anchor">#</a> ParentNode.children</h3> <p><code>children</code>属性返回一个<code>HTMLCollection</code>实例，成员是当前节点的所有元素子节点。该属性只读。</p> <p>下面是遍历某个节点的所有元素子节点的示例。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> el<span class="token punctuation">.</span>children<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>注意，<code>children</code>属性只包括元素子节点，不包括其他类型的子节点（比如文本子节点）。如果没有元素类型的子节点，返回值<code>HTMLCollection</code>实例的<code>length</code>属性为<code>0</code>。</p> <p>另外，<code>HTMLCollection</code>是动态集合，会实时反映 DOM 的任何变化。</p> <h3 id="parentnode-firstelementchild"><a href="#parentnode-firstelementchild" class="header-anchor">#</a> ParentNode.firstElementChild</h3> <p><code>firstElementChild</code>属性返回当前节点的第一个元素子节点。如果没有任何元素子节点，则返回<code>null</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>firstElementChild<span class="token punctuation">.</span>nodeName
+<span class="token comment">// &quot;HTML&quot;</span>
+</code></pre></div><p>上面代码中，<code>document</code>节点的第一个元素子节点是<code>&lt;HTML&gt;</code>。</p> <h3 id="parentnode-lastelementchild"><a href="#parentnode-lastelementchild" class="header-anchor">#</a> ParentNode.lastElementChild</h3> <p><code>lastElementChild</code>属性返回当前节点的最后一个元素子节点，如果不存在任何元素子节点，则返回<code>null</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>lastElementChild<span class="token punctuation">.</span>nodeName
+<span class="token comment">// &quot;HTML&quot;</span>
+</code></pre></div><p>上面代码中，<code>document</code>节点的最后一个元素子节点是<code>&lt;HTML&gt;</code>（因为<code>document</code>只包含这一个元素子节点）。</p> <h3 id="parentnode-childelementcount"><a href="#parentnode-childelementcount" class="header-anchor">#</a> ParentNode.childElementCount</h3> <p><code>childElementCount</code>属性返回一个整数，表示当前节点的所有元素子节点的数目。如果不包含任何元素子节点，则返回<code>0</code>。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>childElementCount <span class="token comment">// 13</span>
+</code></pre></div><h3 id="parentnode-append-parentnode-prepend"><a href="#parentnode-append-parentnode-prepend" class="header-anchor">#</a> ParentNode.append()，ParentNode.prepend()</h3> <p><strong>（1）ParentNode.append()</strong></p> <p><code>append()</code>方法为当前节点追加一个或多个子节点，位置是最后一个元素子节点的后面。</p> <p>该方法不仅可以添加元素子节点（参数为元素节点），还可以添加文本子节点（参数为字符串）。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> parent <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">;</span>
+
+<span class="token comment">// 添加元素子节点</span>
+<span class="token keyword">var</span> p <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+parent<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 添加文本子节点</span>
+parent<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 添加多个元素子节点</span>
+<span class="token keyword">var</span> p1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> p2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+parent<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>p1<span class="token punctuation">,</span> p2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 添加元素子节点和文本子节点</span>
+<span class="token keyword">var</span> p <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+parent<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>该方法没有返回值。</p> <p>注意，该方法与<code>Node.prototype.appendChild()</code>方法有三点不同。</p> <ul><li><code>append()</code>允许字符串作为参数，<code>appendChild()</code>只允许子节点作为参数。</li> <li><code>append()</code>没有返回值，而<code>appendChild()</code>返回添加的子节点。</li> <li><code>append()</code>可以添加多个子节点和字符串（即允许多个参数），<code>appendChild()</code>只能添加一个节点（即只允许一个参数）。</li></ul> <p><strong>（2）ParentNode.prepend()</strong></p> <p><code>prepend()</code>方法为当前节点追加一个或多个子节点，位置是第一个元素子节点的前面。它的用法与<code>append()</code>方法完全一致，也是没有返回值。</p> <h2 id="childnode-接口"><a href="#childnode-接口" class="header-anchor">#</a> ChildNode 接口</h2> <p>如果一个节点有父节点，那么该节点就拥有了<code>ChildNode</code>接口。</p> <h3 id="childnode-remove"><a href="#childnode-remove" class="header-anchor">#</a> ChildNode.remove()</h3> <p><code>remove()</code>方法用于从父节点移除当前节点。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>el<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>上面代码在 DOM 里面移除了<code>el</code>节点。</p> <h3 id="childnode-before-childnode-after"><a href="#childnode-before-childnode-after" class="header-anchor">#</a> ChildNode.before()，ChildNode.after()</h3> <p><strong>（1）ChildNode.before()</strong></p> <p><code>before()</code>方法用于在当前节点的前面，插入一个或多个同级节点。两者拥有相同的父节点。</p> <p>注意，该方法不仅可以插入元素节点，还可以插入文本节点。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> p <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> p1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 插入元素节点</span>
+el<span class="token punctuation">.</span><span class="token function">before</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 插入文本节点</span>
+el<span class="token punctuation">.</span><span class="token function">before</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 插入多个元素节点</span>
+el<span class="token punctuation">.</span><span class="token function">before</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 插入元素节点和文本节点</span>
+el<span class="token punctuation">.</span><span class="token function">before</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> <span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>（2）ChildNode.after()</strong></p> <p><code>after()</code>方法用于在当前节点的后面，插入一个或多个同级节点，两者拥有相同的父节点。用法与<code>before</code>方法完全相同。</p> <h3 id="childnode-replacewith"><a href="#childnode-replacewith" class="header-anchor">#</a> ChildNode.replaceWith()</h3> <p><code>replaceWith()</code>方法使用参数节点，替换当前节点。参数可以是元素节点，也可以是文本节点。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> span <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'span'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+el<span class="token punctuation">.</span><span class="token function">replaceWith</span><span class="token punctuation">(</span>span<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>上面代码中，<code>el</code>节点将被<code>span</code>节点替换。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wangdao/dom/nodelist.html" class="prev">
+        8.3 NodeList 接口，HTMLCollection 接口
+      </a></span> <span class="next"><a href="/wangdao/dom/document.html">
+        8.5 Document 节点
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.dfbab1e4.js" defer></script><script src="/assets/js/2.674f3196.js" defer></script><script src="/assets/js/39.4d529e07.js" defer></script><script src="/assets/js/3.ae598ba4.js" defer></script>
+  </body>
+</html>

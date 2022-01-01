@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>阮一峰 ES5 标准入门教程 | 前端图文教程</title>
+    <meta name="generator" content="VuePress 1.9.4">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/js/manifest.json">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="从零开始学前端，超详细的前端入门到进阶学习笔记。">
+    <meta rel="keywords" content="向日葵的花圃,wanan,向日葵">
+    <meta name="Author" content="阿亮">
+    
+    <link rel="preload" href="/assets/css/0.styles.ba12db86.css" as="style"><link rel="preload" href="/assets/js/app.dfbab1e4.js" as="script"><link rel="preload" href="/assets/js/2.674f3196.js" as="script"><link rel="preload" href="/assets/js/9.d888eebd.js" as="script"><link rel="preload" href="/assets/js/3.ae598ba4.js" as="script"><link rel="prefetch" href="/assets/js/10.16616378.js"><link rel="prefetch" href="/assets/js/11.29881809.js"><link rel="prefetch" href="/assets/js/12.9a87c2ae.js"><link rel="prefetch" href="/assets/js/13.57542dd5.js"><link rel="prefetch" href="/assets/js/14.1cc2abc4.js"><link rel="prefetch" href="/assets/js/15.879d6ad5.js"><link rel="prefetch" href="/assets/js/16.1b79ce4a.js"><link rel="prefetch" href="/assets/js/17.15fac69c.js"><link rel="prefetch" href="/assets/js/18.fa884e6e.js"><link rel="prefetch" href="/assets/js/19.34e4a395.js"><link rel="prefetch" href="/assets/js/20.1979e1c1.js"><link rel="prefetch" href="/assets/js/21.e840c4f5.js"><link rel="prefetch" href="/assets/js/22.d9d72673.js"><link rel="prefetch" href="/assets/js/23.d77d6229.js"><link rel="prefetch" href="/assets/js/24.683422a1.js"><link rel="prefetch" href="/assets/js/25.0fa5c50c.js"><link rel="prefetch" href="/assets/js/26.b04bac84.js"><link rel="prefetch" href="/assets/js/27.dda0e719.js"><link rel="prefetch" href="/assets/js/28.c4edefb6.js"><link rel="prefetch" href="/assets/js/29.196c3857.js"><link rel="prefetch" href="/assets/js/30.a19d3c53.js"><link rel="prefetch" href="/assets/js/31.1fdfca4f.js"><link rel="prefetch" href="/assets/js/32.725f955d.js"><link rel="prefetch" href="/assets/js/33.8cee3bd1.js"><link rel="prefetch" href="/assets/js/34.98be3dd6.js"><link rel="prefetch" href="/assets/js/35.5f03dd4a.js"><link rel="prefetch" href="/assets/js/36.290a79ae.js"><link rel="prefetch" href="/assets/js/37.a2951d1d.js"><link rel="prefetch" href="/assets/js/38.7db7d2ce.js"><link rel="prefetch" href="/assets/js/39.4d529e07.js"><link rel="prefetch" href="/assets/js/4.69317af8.js"><link rel="prefetch" href="/assets/js/40.98318dea.js"><link rel="prefetch" href="/assets/js/41.bafd8e9e.js"><link rel="prefetch" href="/assets/js/42.5aa666c5.js"><link rel="prefetch" href="/assets/js/43.03715cae.js"><link rel="prefetch" href="/assets/js/44.98044057.js"><link rel="prefetch" href="/assets/js/45.e056bc66.js"><link rel="prefetch" href="/assets/js/46.3e355785.js"><link rel="prefetch" href="/assets/js/47.1710c122.js"><link rel="prefetch" href="/assets/js/48.ea751d13.js"><link rel="prefetch" href="/assets/js/49.2971669d.js"><link rel="prefetch" href="/assets/js/5.d97bbedf.js"><link rel="prefetch" href="/assets/js/50.427e1a31.js"><link rel="prefetch" href="/assets/js/51.b3c33558.js"><link rel="prefetch" href="/assets/js/52.b2c8e710.js"><link rel="prefetch" href="/assets/js/53.bdd88686.js"><link rel="prefetch" href="/assets/js/54.bcc383bb.js"><link rel="prefetch" href="/assets/js/55.be13c03d.js"><link rel="prefetch" href="/assets/js/56.ec0440a9.js"><link rel="prefetch" href="/assets/js/57.38e5ce7d.js"><link rel="prefetch" href="/assets/js/58.11645d67.js"><link rel="prefetch" href="/assets/js/59.1e96e19c.js"><link rel="prefetch" href="/assets/js/6.3b5fd920.js"><link rel="prefetch" href="/assets/js/60.48884068.js"><link rel="prefetch" href="/assets/js/61.67e6dcf4.js"><link rel="prefetch" href="/assets/js/62.644505b8.js"><link rel="prefetch" href="/assets/js/63.381e1897.js"><link rel="prefetch" href="/assets/js/64.a30384e1.js"><link rel="prefetch" href="/assets/js/65.ff861eb4.js"><link rel="prefetch" href="/assets/js/66.45a06096.js"><link rel="prefetch" href="/assets/js/67.8743b6dc.js"><link rel="prefetch" href="/assets/js/68.4d065624.js"><link rel="prefetch" href="/assets/js/69.38f8f966.js"><link rel="prefetch" href="/assets/js/7.82c024fb.js"><link rel="prefetch" href="/assets/js/70.2724ba9a.js"><link rel="prefetch" href="/assets/js/71.4d73462a.js"><link rel="prefetch" href="/assets/js/72.d94a0a71.js"><link rel="prefetch" href="/assets/js/73.d24e6a16.js"><link rel="prefetch" href="/assets/js/74.40cd0e27.js"><link rel="prefetch" href="/assets/js/75.d5e42546.js"><link rel="prefetch" href="/assets/js/76.cd30be22.js"><link rel="prefetch" href="/assets/js/77.b287e80f.js"><link rel="prefetch" href="/assets/js/78.8fb9f058.js"><link rel="prefetch" href="/assets/js/79.41accf9e.js"><link rel="prefetch" href="/assets/js/8.5860fb56.js"><link rel="prefetch" href="/assets/js/80.9c4900b2.js"><link rel="prefetch" href="/assets/js/81.f7c0ee1e.js"><link rel="prefetch" href="/assets/js/82.6439cccd.js"><link rel="prefetch" href="/assets/js/83.14a8a434.js"><link rel="prefetch" href="/assets/js/84.bbedb52a.js"><link rel="prefetch" href="/assets/js/85.051db183.js"><link rel="prefetch" href="/assets/js/86.a4230665.js"><link rel="prefetch" href="/assets/js/87.e43eac63.js"><link rel="prefetch" href="/assets/js/88.d535360d.js"><link rel="prefetch" href="/assets/js/89.531d6866.js"><link rel="prefetch" href="/assets/js/90.cdab578d.js"><link rel="prefetch" href="/assets/js/91.c95dd417.js"><link rel="prefetch" href="/assets/js/92.b3ac4aec.js"><link rel="prefetch" href="/assets/js/93.415d411a.js"><link rel="prefetch" href="/assets/js/94.85f641ab.js"><link rel="prefetch" href="/assets/js/95.90d685b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ba12db86.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端图文教程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wangdao/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  阮一峰
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  午高
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="社交" class="dropdown-title"><span class="title">社交</span> <span class="arrow down"></span></button> <button type="button" aria-label="社交" class="mobile-dropdown-title"><span class="title">社交</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  花盆
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          思维导图
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          文档管理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li><li class="dropdown-item"><h4>
+          实用工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li><li class="dropdown-subitem"><a href="/" class="nav-link">
+  花盆
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wangdao/" aria-current="page" class="active sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1. 入门篇</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2. 数据类型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>3. 运算符</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>4. 语法专题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>5. 标准库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>6. 面向对象编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>7. 异步操作</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>8. DOM</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>9. 事件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>10. 浏览器模型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>11. 附录：网页元素接口</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="阮一峰-es5-标准入门教程"><a href="#阮一峰-es5-标准入门教程" class="header-anchor">#</a> 阮一峰 ES5 标准入门教程</h1> <p>本教程全面介绍 JavaScript 核心语法，覆盖了 ES5 和 DOM 规范的所有内容。</p> <p>内容上从最简单的讲起，循序渐进、由浅入深，力求清晰易懂。所有章节都带有大量的代码实例，便于理解和模仿，可以用到实际项目中，即学即用。</p> <p>本教程适合初学者当作 JavaScript 语言入门教程，学完后就可以承担实际的网页开发工作，也适合当作日常使用的参考手册。</p> <p>JavaScript 后续新增的 ES6 语法，请看<a href="https://wangdoc.com/es6/" target="_blank" rel="noopener noreferrer">《ES6 标准入门教程》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/wangdao/basic/introduction.html">
+        1.1 导论
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.dfbab1e4.js" defer></script><script src="/assets/js/2.674f3196.js" defer></script><script src="/assets/js/9.d888eebd.js" defer></script><script src="/assets/js/3.ae598ba4.js" defer></script>
+  </body>
+</html>
